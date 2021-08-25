@@ -19,9 +19,9 @@ class UsersController < ApplicationController
       @friends = User.search(params[:friend])
       @friends = current_user.except_current_user(@friends)
       if @friends
-        respond_to do |format|
-          format.js { render partial: 'users/friend_result' }
-        end
+          respond_to do |format|
+            format.js { render partial: 'users/friend_result' }
+          end
       else
         respond_to do |format|
           flash.now[:alert] = "Couldn't find user"

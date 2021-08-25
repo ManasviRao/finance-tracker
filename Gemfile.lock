@@ -123,6 +123,8 @@ GEM
       money_helper
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
+    jquery-ui-rails (6.0.1)
+      railties (>= 3.2.16)
     listen (3.6.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -258,6 +260,7 @@ DEPENDENCIES
   font-awesome-rails
   iex-ruby-client
   jbuilder (~> 2.7)
+  jquery-ui-rails
   listen (~> 3.3)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)

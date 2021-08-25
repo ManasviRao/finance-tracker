@@ -4,6 +4,11 @@ class Stock < ApplicationRecord
 
     validates :name, :ticker, presence: true
 
+    def self.search(term)
+        where("#{name} like ?", "%#{term}%")
+    end
+      
+
     def self.new_lookup(ticker_symbol)
         client = IEX::Api::Client.new(
             publishable_token: Rails.application.credentials.iex_client[:sandbox_api_key],

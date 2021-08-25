@@ -1,4 +1,10 @@
 class StocksController < ApplicationController
+
+    def index
+        @stock = Stock.search(params[:stock])
+        render json: @stock.map(&:name).uniq
+    end
+
     def search
         if params[:stock].present?
             @stock = Stock.new_lookup(params[:stock])
