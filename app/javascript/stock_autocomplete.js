@@ -1,5 +1,4 @@
-$(function() {
-    $(“#stock-autocomplete”).autocomplete({
-      source: ‘/stocks’,
-    })
+$("#stock-autocomplete").autocomplete
+({
+      source: "search_stock"
 })
