@@ -12,6 +12,7 @@ require("jquery-ui")
 require("easy-autocomplete")
 require("packs/stock_autocomplete")
 
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
